@@ -1,0 +1,17 @@
+:root {
+  --white-color: #fffefe;
+  --dark-grey-color: #363838;
+  --blue-color: #19abc5;
+  font-family: "Barlow Condensed", sans-serif;
+
+  color: var(--white-color);
+  background-color: var(--dark-grey-color);
+}
+
+body {
+  margin: 0;
+}
+
+button {
+  font-family: "Barlow Condensed", sans-serif;
+}
