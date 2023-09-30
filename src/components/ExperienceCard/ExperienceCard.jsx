@@ -1,11 +1,16 @@
 import "./ExperienceCard.css";
 
-const ExperienceCard = ({ props }) => {
-  const experienceDetails = props.job.experienceDetails;
+const ExperienceCard = (props) => {
+  const experienceDetails = props.job.details;
   return (
-    <div>
-      <h3>{props.job.experienceName}</h3>
-      <h4>{props.job.experienceDate}</h4>
+    <div className="experience-card-container">
+      <section className="experience-heading">
+        <h3>
+          {props.job.title} - {props.job.company}
+        </h3>
+        <h4>{props.job.dates}</h4>
+      </section>
+
       <p>{experienceDetails}</p>
     </div>
   );

@@ -9,7 +9,7 @@ function App() {
         <h1 className="section-heading">About Me</h1>
         <About />
         <h1 className="section-heading">Experience</h1>
-        {/* <Experience /> */}
+        <Experience />
         <h1 className="section-heading">Skills</h1>
         <h1 className="section-heading">Projects</h1>
         <h1 className="section-heading">Contact</h1>
