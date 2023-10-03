@@ -11,7 +11,7 @@ const ExperienceCard = (props) => {
         <h4>{props.job.dates}</h4>
       </section>
 
-      <p>{experienceDetails}</p>
+      <p className="experience-details">{experienceDetails}</p>
     </div>
   );
 };

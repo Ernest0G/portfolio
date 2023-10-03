@@ -1,5 +1,5 @@
 .experience-card-container {
-  width: 90%;
+  width: 40vw;
   margin-top: 15px;
   display: flex;
   flex-direction: column;
@@ -11,8 +11,15 @@
 
 .experience-heading {
   width: 90%;
+  font-size: 1.1rem;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: flex-start;
+}
+
+.experience-details {
+  text-align: left;
+  text-indent: 4%;
+  padding: 1%;
 }

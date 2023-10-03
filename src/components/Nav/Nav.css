@@ -1,19 +1,17 @@
 #nav-bar {
   width: 100%;
   height: 8vh;
-  padding-right: 2%;
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
   justify-content: flex-end;
   background-color: var(--blue-color);
-  position: fixed;
-  top: 0;
 }
 
 .nav-item {
   cursor: pointer;
   font-size: 1.2rem;
+  margin-right: 10px;
 }
 
 .nav-item:hover {
