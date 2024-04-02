@@ -3,7 +3,7 @@ import { Jobs } from "../assets/jobs.js";
 
 const Experience = () => {
   return (
-    <div className="w-full h-screen flex flex-col items-center justify-evenly bg-accent snap-start">
+    <div className="w-full flex flex-col items-center justify-evenly">
       <h1 id="Experience" className="text-xl font-bold text-white text-center">
         Experience
       </h1>

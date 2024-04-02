@@ -1,6 +1,6 @@
 const Contact = () => {
   return (
-    <div className="w-full h-screen gap-3 sm:gap-10 flex flex-col justify-center items-center bg-accent snap-start">
+    <div className="w-full h-screen gap-3 sm:gap-10 flex flex-col justify-center items-center bg-accent">
       <h1 id="Contact" className="text-xl font-bold text-white text-center">
         Contact Me
       </h1>

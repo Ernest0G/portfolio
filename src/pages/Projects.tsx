@@ -3,7 +3,7 @@ import { ProjectsList } from "../assets/projects.js";
 
 const Projects = () => {
   return (
-    <div className="w-full h-screen snap-start">
+    <div className="w-full">
       <h1 id="Projects" className="text-xl font-bold bg-accent text-white text-center">
         Projects
       </h1>

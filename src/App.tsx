@@ -1,4 +1,3 @@
-import "./App.css";
 import { About, Projects, Contact, Experience } from "./pages";
 import { NavItem } from "./components";
 
@@ -14,7 +13,7 @@ function App() {
         </ul>
       </nav>
       <br></br>
-      <main className="w-full h-fit snap-y snap-mandatory flex flex-col overflow-y-scroll">
+      <main className="w-full my-10 flex flex-col">
         <About />
         <br></br>
         <Experience />
