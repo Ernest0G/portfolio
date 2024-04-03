@@ -1,6 +1,6 @@
 export const Jobs = [
   {
-    title: "Chromebook Repair",
+    title: "Chromebook Repairer",
     company: "Merced Union High School District",
     desc: "I worked over the summer repairing Chromebooks for the school district.",
     date: "Summer 2017",

@@ -8,7 +8,7 @@ const Projects = () => {
         Projects
       </h1>
       <br></br>
-      <div className="carousel w-full">
+      <div className="carousel w-full sm:grid sm:w-1/2">
         {ProjectsList.map((project, index) => {
           return (
             <ProjectItem
@@ -20,15 +20,6 @@ const Projects = () => {
               index={index}
               images={project.images}
             />
-          );
-        })}
-      </div>
-      <div className="flex bg-accent justify-center w-full py-2 gap-2">
-        {ProjectsList.map((project, index) => {
-          return (
-            <a href={`#item${index + 1}`} className="bg-primary text-white border-none btn btn-sm">
-              {index + 1}
-            </a>
           );
         })}
       </div>

@@ -12,7 +12,7 @@ const TimelineItem = ({ title, company, desc, date, position }) => {
       </div>
       <div className={`${position === "start" ? "timeline-start" : "timeline-end"} md:text-end`}>
         <time className="font-mono italic text-white">{date}</time>
-        <div className="collapse">
+        <div className="collapse collapse-arrow">
           <input type="checkbox" />
           <div className="collapse-title text-xl font-medium text-white">{title}</div>
           <div className="collapse-content">
