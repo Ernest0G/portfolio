@@ -8,7 +8,7 @@ export const Jobs = [
   {
     title: "Floor Staff",
     company: "Regal Cinemas",
-    desc: "I worked as a floor staff member at Regal Cinemas.",
+    desc: "As a floor staff, I maintained the cleanliness of the theater as well as selling tickets and concessions.",
     date: "September 2021",
   },
   {
