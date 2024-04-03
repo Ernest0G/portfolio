@@ -1,5 +1,5 @@
 import { ProjectItem } from "../components";
-import { ProjectsList } from "../assets/projects.js";
+import { ProjectsList } from "../assets/data/projects.js";
 
 const Projects = () => {
   return (
@@ -19,6 +19,7 @@ const Projects = () => {
               git={project.git}
               index={index}
               images={project.images}
+              tools={project.tools}
             />
           );
         })}

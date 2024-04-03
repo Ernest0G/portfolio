@@ -1,4 +1,4 @@
-const ProjectItem = ({ title, desc, live, git, index, images }) => {
+const ProjectItem = ({ title, desc, live, git, index, images, tools }) => {
   return (
     <div id={`item${index + 1}`} className="carousel-item w-full">
       <div className="card w-full text-white">
@@ -24,11 +24,19 @@ const ProjectItem = ({ title, desc, live, git, index, images }) => {
               <span className="text-white">
                 <div className="card w-full shadow-lg">
                   <div className="card-body p-2 bg-black rounded-lg">
-                    <div className="carousel w-full sm:grid sm:w-1/2">
-                      {images?.map((image, index) => {
-                        return <img key={index} src={image} alt="project" className="w-1/2" />;
-                      })}
-                    </div>
+                    {images && (
+                      <div className="carousel flex justify-center align-middle w-full sm:grid sm:w-1/2">
+                        <div className="h-96 carousel carousel-vertical">
+                          {images?.map((image, index) => {
+                            return (
+                              <div key={index} className="carousel-item h-full">
+                                <img src={image} />
+                              </div>
+                            );
+                          })}
+                        </div>
+                      </div>
+                    )}
                   </div>
                 </div>
               </span>
@@ -40,8 +48,14 @@ const ProjectItem = ({ title, desc, live, git, index, images }) => {
             <div className="collapse-content">
               <span className="text-white">
                 <div className="card w-full shadow-lg">
-                  <div className="card-body p-2 bg-black rounded-lg">
-                    <p>Tools</p>
+                  <div className="card-body w-full flex-row flex-wrap justify-evenly p-2 bg-black rounded-lg">
+                    {tools?.map((tool, index) => {
+                      return (
+                        <span className="badge text-white" key={index}>
+                          {tool}
+                        </span>
+                      );
+                    })}
                   </div>
                 </div>
               </span>
@@ -50,12 +64,16 @@ const ProjectItem = ({ title, desc, live, git, index, images }) => {
           <div className="w-full flex flex-row justify-evenly">
             {live && (
               <button className="bg-primary w-1/4 p-1 font-bold">
-                <a href={live}>Visit Site</a>
+                <a href={live} target="#">
+                  Visit Site
+                </a>
               </button>
             )}
             {git && (
               <button className="bg-primary w-1/4 p-1 font-bold">
-                <a href={git}>Source</a>
+                <a href={git} target="#">
+                  Source
+                </a>
               </button>
             )}
           </div>
