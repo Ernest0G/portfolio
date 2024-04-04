@@ -10,7 +10,7 @@ const ProjectItem = ({ title, desc, live, git, index, images, tools }) => {
             <div className="collapse-content">
               <span className="text-white">
                 <div className="card w-full shadow-lg">
-                  <div className="card-body p-2 bg-black rounded-lg sm:text-2xl">
+                  <div className="card-body p-2 bg-black rounded-lg sm:text-xl md:text-xl lg:text2xl">
                     <p>{desc}</p>
                   </div>
                 </div>
@@ -59,11 +59,11 @@ const ProjectItem = ({ title, desc, live, git, index, images, tools }) => {
               </div>
             </div>
           </div>
-          <div className="w-full flex flex-row justify-evenly sm:text-xl">
+          <div className="w-full flex flex-row justify-evenly sm:text-xl md:text-lg">
             {live && (
               <button className="bg-primary w-1/4 p-1 font-bold">
                 <a href={live} target="#">
-                  Visit Site
+                  Visit
                 </a>
               </button>
             )}

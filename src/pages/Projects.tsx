@@ -9,7 +9,7 @@ const Projects = () => {
       </h1>
       <p className="sm:hidden text-center text-white">Swipe to see more projects</p>
       <br className="hidden sm:flex"></br>
-      <div className="carousel w-full sm:grid sm:grid-cols-3 sm:gap-y-10 sm:item">
+      <div className="carousel w-full sm:grid sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 sm:gap-y-10">
         {ProjectsList.map((project, index) => {
           return (
             <ProjectItem
