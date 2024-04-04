@@ -11,7 +11,8 @@ export const ProjectsList = [
   },
   {
     title: "Echo Box",
-    desc: "A playlist aggregator app, to listen to your Spotify and local playlists from a single source.",
+    desc: `A playlist aggregator app, to listen to your Spotify and local playlists from a single source. It is currently
+    not available for public use.`,
     live: "https://echo-box-syntax-samurai.vercel.app/",
     git: "https://github.com/missile720/music-player",
     images: [],
@@ -19,7 +20,9 @@ export const ProjectsList = [
   },
   {
     title: "Dictionary Dash",
-    desc: "A simple calculator created using React.",
+    desc: `A simple game where the player is given a definition, and must guess the correct word that matches the definition. The game is timed, and the
+    player must answer as many questions as possible before time runs out. Each correct answer increases the player's score and
+    gives them extra time. It also allows to choose between different difficulties.`,
     live: "",
     git: "https://github.com/Ernest0G/dictionary-dash",
     images: [],

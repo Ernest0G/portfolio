@@ -3,10 +3,10 @@ const ProjectItem = ({ title, desc, live, git, index, images, tools }) => {
     <div id={`item${index + 1}`} className="carousel-item w-full sm:justify-center">
       <div className="card w-full text-white sm:items-center">
         <div className="card-body sm:w-11/12 bg-black sm:rounded-xl items-center">
-          <span className="card-title text-xl sm:text-3xl">{title}</span>
+          <span className="card-title text-xl sm:text-2xl">{title}</span>
           <div className="collapse collapse-arrow">
             <input type="checkbox" />
-            <div className="collapse-title text-lg sm:text-3xl font-medium text-white">Description</div>
+            <div className="collapse-title text-lg sm:text-2xl font-medium text-white">Description</div>
             <div className="collapse-content">
               <span className="text-white">
                 <div className="card w-full shadow-lg">
@@ -19,7 +19,7 @@ const ProjectItem = ({ title, desc, live, git, index, images, tools }) => {
           </div>
           <div className="collapse collapse-arrow">
             <input type="checkbox" />
-            <div className="collapse-title text-lg sm:text-3xl font-medium text-white">Images</div>
+            <div className="collapse-title text-lg sm:text-2xl font-medium text-white">Images</div>
             <div className="collapse-content">
               <span className="text-white">
                 <div className="card w-full shadow-lg">
@@ -44,7 +44,7 @@ const ProjectItem = ({ title, desc, live, git, index, images, tools }) => {
           </div>
           <div className="collapse collapse-arrow">
             <input type="checkbox" />
-            <div className="collapse-title text-lg sm:text-3xl font-medium text-white">Tools Used</div>
+            <div className="collapse-title text-lg sm:text-2xl font-medium text-white">Tools Used</div>
             <div className="collapse-content">
               <div className="card w-full shadow-lg">
                 <div className="card-body w-full flex-row flex-wrap justify-evenly p-2 bg-black rounded-lg">
@@ -59,7 +59,7 @@ const ProjectItem = ({ title, desc, live, git, index, images, tools }) => {
               </div>
             </div>
           </div>
-          <div className="w-full flex flex-row justify-evenly sm:text-2xl">
+          <div className="w-full flex flex-row justify-evenly sm:text-xl">
             {live && (
               <button className="bg-primary w-1/4 p-1 font-bold">
                 <a href={live} target="#">

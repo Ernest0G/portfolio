@@ -1,3 +1,5 @@
+import Resume from "../assets/data/Resume.pdf";
+
 const About = () => {
   return (
     <div className="w-full flex flex-col justify-center items-center bg-accent">
@@ -17,7 +19,13 @@ const About = () => {
       </div>
       <br></br>
       <div className="w-full flex flex-col items-center justify-center">
-        <button className="w-2/5 sm:w-1/4 p-1 shadow-md font-bold bg-primary text-white">Resume</button>
+        <a
+          className="w-2/5 sm:w-1/4 p-1 shadow-md font-bold bg-primary text-white text-center"
+          href={Resume}
+          target="#"
+        >
+          Resume
+        </a>
       </div>
     </div>
   );
