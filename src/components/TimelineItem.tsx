@@ -10,16 +10,18 @@ const TimelineItem = ({ title, company, desc, date, position }) => {
           />
         </svg>
       </div>
-      <div className={`${position === "start" ? "timeline-start" : "timeline-end"} md:text-end`}>
-        <time className="font-mono italic text-white">{date}</time>
+      <div className={`${position === "start" ? "timeline-start" : "timeline-end"} sm:text-end`}>
+        <time className="font-mono italic text-white sm:text-left">{date}</time>
         <div className="collapse collapse-arrow">
           <input type="checkbox" />
-          <div className="collapse-title text-xl font-medium text-white">{title}</div>
+          <div className={`collapse-title text-xl font-medium text-white ${position === "end" && "sm:text-start"}`}>
+            {title}
+          </div>
           <div className="collapse-content">
             <span className="text-white">
               <div className="card w-full shadow-lg">
                 <div className="card-body bg-black rounded-lg">
-                  <span className="card-title text-lg">{company}</span>
+                  <span className="card-title text-lg sm:text-start">{company}</span>
                   <p>{desc}</p>
                 </div>
               </div>
