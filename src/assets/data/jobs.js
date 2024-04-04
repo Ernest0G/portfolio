@@ -15,7 +15,7 @@ export const Jobs = [
     title: "Software Developer Intern",
     company: "Bay Valley Tech",
     desc: "I worked as a software developer intern at Bay Valley Tech.",
-    date: "April 2022",
+    date: "April 2023",
   },
   {
     title: "Programmer Analyst I",

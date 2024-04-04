@@ -29,7 +29,7 @@ export const ProjectsList = [
     title: "This Website",
     desc: "This is my portfolio website showcasing my work experience and projects.",
     live: "",
-    git: "",
+    git: "https://github.com/Ernest0G/portfolio",
     images: [],
     tools: ["React.js", "TailwindCSS", "DaisyUI"],
   },

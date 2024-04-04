@@ -1,12 +1,12 @@
 const About = () => {
   return (
-    <div className="w-full flex flex-col justify-center items-center bg-accent sm:flex sm:flex-col sm:justify-center">
+    <div className="w-full flex flex-col justify-center items-center bg-accent">
       <h1 id="About" className="text-xl sm:text-3xl font-bold text-white text-center">
         About Me
       </h1>
       <br></br>
-      <div className="card w-11/12 shadow-md sm:w-1/2">
-        <div className="card-body p-5 sm:p-10 bg-black rounded-md">
+      <div className="card w-11/12 shadow-md sm:w-2/5">
+        <div className="card-body p-5 sm:p-10 bg-black rounded-md sm:rounded-xl">
           <p className="text-white sm:text-3xl">
             Hi, I'm Ernesto! I'm a passionate software developer with experience in web development. I love creating
             user-friendly and efficient applications using modern technologies. In my free time, I enjoy exploring new
