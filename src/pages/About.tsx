@@ -1,4 +1,6 @@
 import Resume from "../assets/data/Resume.pdf";
+import { FaLinkedin } from "react-icons/fa";
+import { FaGithub } from "react-icons/fa";
 
 const About = () => {
   return (
@@ -12,9 +14,17 @@ const About = () => {
           <p className="text-white sm:text-3xl">
             Hi, my name is Ernesto Gutierrez! I'm a passionate software developer with experience in web development. I
             love creating user-friendly and efficient applications using modern technologies. In my free time, I enjoy
-            exploring new programming languages and frameworks. Feel free to reach out to me if you have any questions
+            exploring new programming languages and frameworks. Feel free to connect with me if you have any questions
             or collaboration opportunities!
           </p>
+          <div className="w-full my-4 flex flex-row items-center justify-evenly font-bold text-secondary text-3xl md:text-5xl lg:text-5xl">
+            <a href="https://www.linkedin.com/in/ernesto1gutierrez/" target="#">
+              <FaLinkedin />
+            </a>
+            <a href="https://github.com/Ernest0G" target="#">
+              <FaGithub />
+            </a>
+          </div>
         </div>
       </div>
       <br></br>

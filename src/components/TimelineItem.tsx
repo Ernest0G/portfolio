@@ -1,3 +1,5 @@
+import { CiCalendarDate } from "react-icons/ci";
+
 const TimelineItem = ({ title, company, desc, date, position }) => {
   return (
     <li>
@@ -11,14 +13,16 @@ const TimelineItem = ({ title, company, desc, date, position }) => {
         </svg>
       </div>
       <div className={`${position === "start" ? "timeline-start" : "timeline-end"} sm:text-start`}>
-        <time className="font-mono italic text-white sm:text-left">{date}</time>
+        <time className="md:flex align-middle items-center gap-1 font-mono italic text-white sm:text-left md:text-2xl lg:text-xl">
+          <CiCalendarDate /> {date}
+        </time>
         <div className="collapse collapse-arrow">
           <input type="checkbox" />
-          <div className="collapse-title sm:p-0 text-xl font-medium text-white">{title}</div>
+          <div className="collapse-title sm:p-0 text-xl md:text-3xl lg:text-2xl font-medium text-white">{title}</div>
           <div className="collapse-content text-white">
             <div className="card w-full shadow-lg">
-              <div className="card-body bg-black rounded-lg">
-                <span className="card-title text-lg sm:text-start">{company}</span>
+              <div className="card-body bg-black rounded-lg md:text-xl">
+                <span className="card-title text-lg sm:text-start md:text-2xl lg:text-xl">{company}</span>
                 <p>{desc}</p>
               </div>
             </div>
