@@ -1,5 +1,6 @@
 import { About, Projects, Experience } from "./pages";
 import { NavItem } from "./components";
+import { Analytics } from "@vercel/analytics/react";
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
         <br></br>
         {/* <Contact /> */}
       </main>
+      <Analytics />
     </>
   );
 }
