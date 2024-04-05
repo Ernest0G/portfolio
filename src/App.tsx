@@ -9,7 +9,7 @@ function App() {
           <NavItem item={"About"} />
           <NavItem item={"Experience"} />
           <NavItem item={"Projects"} />
-          <NavItem item={"Contact"} />
+          {/* <NavItem item={"Contact"} /> */}
         </ul>
       </nav>
       <br></br>
@@ -19,7 +19,8 @@ function App() {
         <Experience />
         <br></br>
         <Projects />
-        <Contact />
+        <br></br>
+        {/* <Contact /> */}
       </main>
     </>
   );
