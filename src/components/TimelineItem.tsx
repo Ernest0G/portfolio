@@ -14,7 +14,7 @@ const TimelineItem = ({ title, company, desc, date, position }) => {
       </div>
       <div className={`${position === "start" ? "timeline-start" : "timeline-end"} sm:text-start`}>
         <time className="md:flex align-middle items-center gap-1 font-mono italic text-white sm:text-left md:text-2xl lg:text-xl">
-          <CiCalendarDate /> {date}
+          <CiCalendarDate className="hidden md:flex" /> {date}
         </time>
         <div className="collapse collapse-arrow">
           <input type="checkbox" />

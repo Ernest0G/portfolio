@@ -1,6 +1,18 @@
+import { useState } from "react";
+
 const Contact = () => {
+  const [email, setEmail] = useState("");
+  const [body, setBody] = useState("");
+
+  async function sendEmail() {
+    try {
+    } catch (error) {
+      console.log(error);
+    }
+  }
+
   return (
-    <div className="w-full h-screen gap-3 sm:gap-10 flex flex-col justify-center items-center bg-accent">
+    <div className="w-full my-12 gap-3 sm:gap-10 flex flex-col justify-center items-center bg-accent">
       <h1 id="Contact" className="text-xl sm:text-4xl font-bold text-white text-center">
         Contact Me
       </h1>
@@ -12,6 +24,7 @@ const Contact = () => {
           name="email"
           type="email"
           className="form-input w-full px-1 py-1 shadow-md border-2 outline-black text-black sm:text-xl lg:text-2xl bg-white"
+          onChange={(e) => setEmail(e.target.value)}
         />
       </div>
       <div className="w-3/4 md:w-3/5 lg:w-2/5 flex flex-col items-center justify-center">
@@ -22,10 +35,14 @@ const Contact = () => {
           name="body"
           className="form-textarea w-full px-1 py-1 shadow-md border-2 outline-black text-black sm:text-xl lg:text-2xl bg-white resize-none"
           rows={12}
+          onChange={(e) => setBody(e.target.value)}
         />
       </div>
       <div className="w-full flex flex-col items-center justify-center">
-        <button className="w-2/5 lg:w-1/5 p-1 shadow-md font-bold bg-primary text-white sm:text-xl lg:text-2xl">
+        <button
+          className="w-2/5 lg:w-1/5 p-1 shadow-md font-bold bg-primary text-white sm:text-xl lg:text-2xl"
+          onClick={() => sendEmail}
+        >
           Send
         </button>
       </div>

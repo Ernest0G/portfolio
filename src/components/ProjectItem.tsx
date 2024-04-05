@@ -1,6 +1,6 @@
 const ProjectItem = ({ title, desc, live, git, index, images, tools }) => {
   return (
-    <div id={`item${index + 1}`} className="carousel-item w-full sm:justify-center">
+    <div id={`item${index}`} className="carousel-item w-full sm:justify-center">
       <div className="card w-full text-white sm:items-center">
         <div className="card-body sm:w-11/12 bg-black sm:rounded-xl items-center">
           <span className="card-title text-xl sm:text-2xl">{title}</span>
