@@ -1,4 +1,20 @@
-const ProjectItem = ({ title, desc, live, git, index, images, tools }) => {
+const ProjectItem = ({
+  title,
+  desc,
+  live,
+  git,
+  index,
+  images,
+  tools,
+}: {
+  title: string;
+  desc: string;
+  live: string;
+  git: string;
+  index: number;
+  images: string[];
+  tools: string[];
+}) => {
   return (
     <div id={`item${index}`} className="carousel-item w-full sm:justify-center">
       <div className="card w-full text-white sm:items-center">

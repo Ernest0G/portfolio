@@ -1,4 +1,4 @@
-import { About, Projects, Contact, Experience } from "./pages";
+import { About, Projects, Experience } from "./pages";
 import { NavItem } from "./components";
 
 function App() {

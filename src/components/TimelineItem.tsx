@@ -1,6 +1,18 @@
 import { CiCalendarDate } from "react-icons/ci";
 
-const TimelineItem = ({ title, company, desc, date, position }) => {
+const TimelineItem = ({
+  title,
+  company,
+  desc,
+  date,
+  position,
+}: {
+  title: string;
+  company: string;
+  desc: string;
+  date: string;
+  position: string;
+}) => {
   return (
     <li>
       <div className="timeline-middle sm:hidden">

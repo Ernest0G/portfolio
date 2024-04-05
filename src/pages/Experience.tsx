@@ -1,5 +1,6 @@
 import { TimelineItem } from "../components";
-import { Jobs } from "../assets/data/jobs.js";
+import { Jobs } from "../assets/data/jobs.ts";
+import { JobType } from "../types/jobType.ts";
 
 const Experience = () => {
   return (
@@ -8,7 +9,7 @@ const Experience = () => {
         Work Experience
       </h1>
       <ul className="text-sm timeline timeline-snap-icon max-md:timeline-compact timeline-vertical sm:hidden">
-        {Jobs.map((job, index) => {
+        {Jobs.map((job: JobType, index: number) => {
           return (
             <TimelineItem
               key={index}
@@ -22,7 +23,7 @@ const Experience = () => {
         })}
       </ul>
       <div className="hidden sm:flex sm:flex-col sm:w-1/2 md:w-11/12 lg:w-1/2">
-        {Jobs.map((job, index) => {
+        {Jobs.map((job: JobType, index: number) => {
           return (
             <TimelineItem
               key={index}

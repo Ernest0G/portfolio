@@ -1,6 +1,7 @@
 import { ProjectItem } from "../components";
-import { ProjectsList } from "../assets/data/projects.js";
+import { ProjectsList } from "../assets/data/projects.ts";
 import "./Projects.css";
+import { ProjectType } from "../types/projectType.ts";
 
 const Projects = () => {
   return (
@@ -10,7 +11,7 @@ const Projects = () => {
       </h1>
       <br className="hidden sm:flex"></br>
       <div className="carousel show-scrollbar w-full sm:grid sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 sm:gap-y-10">
-        {ProjectsList.map((project, index) => {
+        {ProjectsList.map((project: ProjectType, index: number) => {
           return (
             <ProjectItem
               key={index}

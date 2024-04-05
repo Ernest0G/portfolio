@@ -1,4 +1,4 @@
-import { magictools1, magictools2 } from "../images/index";
+import { magictools1, magictools2 } from "../images/index.ts";
 
 export const ProjectsList = [
   {
