@@ -40,7 +40,7 @@ const ProjectItem = ({
               <span className="text-white">
                 <div className="card w-full shadow-lg">
                   <div className="card-body p-2 bg-black rounded-lg">
-                    {images && (
+                    {images.length > 0 && (
                       <div className="carousel flex justify-center align-middle w-full">
                         <div className="h-96 carousel carousel-vertical">
                           {images?.map((image, index) => {
