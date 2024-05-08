@@ -2,6 +2,15 @@ import { magictools1, magictools2 } from "../images/index.ts";
 
 export const ProjectsList = [
   {
+    title: "DocsRealm (Beta)",
+    desc: `DocsRealm is a platform where users can create and share documents that range in a variety of topics. 
+    The platform is designed to be user-friendly and easy to use.`,
+    live: "https://docsrealm.com/",
+    git: "",
+    images: [],
+    tools: ["React.js", "TailwindCSS", "MongoDB"],
+  },
+  {
     title: "Magic Tools (Closed Beta)",
     desc: "A Magic The Gathering companion app for playing in person. Currently, it includes some basic functionality such as a life counter, dice roller, and a coin flipper. The app also includes both local and online multiplayer functionality, allowing multiple users to connect to the same game.",
     live: "https://magictools.app/",

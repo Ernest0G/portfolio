@@ -16,17 +16,17 @@ const ProjectItem = ({
   tools: string[];
 }) => {
   return (
-    <div id={`item${index}`} className="carousel-item w-full sm:justify-center">
-      <div className="card w-full text-white sm:items-center">
-        <div className="card-body sm:w-11/12 bg-black sm:rounded-xl items-center">
-          <span className="card-title text-xl sm:text-2xl">{title}</span>
+    <div id={`item${index}`} className="w-full carousel-item sm:justify-center">
+      <div className="w-full text-white card sm:items-center">
+        <div className="items-center bg-black card-body sm:w-11/12 sm:rounded-xl">
+          <span className="text-xl card-title sm:text-2xl">{title}</span>
           <div className="collapse collapse-arrow">
             <input type="checkbox" />
-            <div className="collapse-title text-lg sm:text-2xl font-medium text-white">Description</div>
+            <div className="text-lg font-medium text-white collapse-title sm:text-2xl">Description</div>
             <div className="collapse-content">
               <span className="text-white">
-                <div className="card w-full shadow-lg">
-                  <div className="card-body p-2 bg-black rounded-lg sm:text-xl md:text-xl lg:text2xl">
+                <div className="w-full shadow-lg card">
+                  <div className="p-2 bg-black rounded-lg card-body sm:text-xl md:text-xl lg:text2xl">
                     <p>{desc}</p>
                   </div>
                 </div>
@@ -35,17 +35,17 @@ const ProjectItem = ({
           </div>
           <div className="collapse collapse-arrow">
             <input type="checkbox" />
-            <div className="collapse-title text-lg sm:text-2xl font-medium text-white">Images</div>
+            <div className="text-lg font-medium text-white collapse-title sm:text-2xl">Images</div>
             <div className="collapse-content">
               <span className="text-white">
-                <div className="card w-full shadow-lg">
-                  <div className="card-body p-2 bg-black rounded-lg">
-                    {images && (
-                      <div className="carousel flex justify-center align-middle w-full">
+                <div className="w-full shadow-lg card">
+                  <div className="p-2 bg-black rounded-lg card-body">
+                    {images.length > 0 && (
+                      <div className="flex justify-center w-full align-middle carousel">
                         <div className="h-96 carousel carousel-vertical">
                           {images?.map((image, index) => {
                             return (
-                              <div key={index} className="carousel-item h-full">
+                              <div key={index} className="h-full carousel-item">
                                 <img src={image} />
                               </div>
                             );
@@ -60,13 +60,13 @@ const ProjectItem = ({
           </div>
           <div className="collapse collapse-arrow">
             <input type="checkbox" />
-            <div className="collapse-title text-lg sm:text-2xl font-medium text-white">Tools Used</div>
+            <div className="text-lg font-medium text-white collapse-title sm:text-2xl">Tools Used</div>
             <div className="collapse-content">
-              <div className="card w-full shadow-lg">
-                <div className="card-body w-full flex-row flex-wrap justify-evenly p-2 bg-black rounded-lg">
+              <div className="w-full shadow-lg card">
+                <div className="flex-row flex-wrap w-full p-2 bg-black rounded-lg card-body justify-evenly">
                   {tools?.map((tool, index) => {
                     return (
-                      <span className="badge text-white sm:text-xl" key={index}>
+                      <span className="text-white badge sm:text-xl" key={index}>
                         {tool}
                       </span>
                     );
@@ -75,16 +75,16 @@ const ProjectItem = ({
               </div>
             </div>
           </div>
-          <div className="w-full flex flex-row justify-evenly sm:text-xl md:text-lg">
+          <div className="flex flex-row w-full justify-evenly sm:text-xl md:text-lg">
             {live && (
-              <button className="bg-primary w-1/4 p-1 font-bold">
+              <button className="w-1/4 p-1 font-bold bg-primary">
                 <a href={live} target="#">
                   Visit
                 </a>
               </button>
             )}
             {git && (
-              <button className="bg-primary w-1/4 p-1 font-bold">
+              <button className="w-1/4 p-1 font-bold bg-primary">
                 <a href={git} target="#">
                   Source
                 </a>
